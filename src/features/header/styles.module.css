@@ -1,0 +1,11 @@
+.header {
+ background-color: #d0d0d0;
+    height: 50px;
+}
+
+.button {
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
