@@ -1,4 +1,4 @@
-import {createSlice} from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 const appInitialState = {
     error: null as string | null,
@@ -8,11 +8,15 @@ const appInitialState = {
 }
 
 
-
 const slice = createSlice({
     name: 'app',
     initialState: appInitialState,
     reducers: {
-
+        setIsLoading: (state, action: PayloadAction<{ iaLoading: boolean }>) => {
+            state.isLoading = action.payload.iaLoading
+        },
+        setError: (state, action: PayloadAction<{ error: string | null }>) => {
+            state.error = action.payload.error
+        }
     }
 })
