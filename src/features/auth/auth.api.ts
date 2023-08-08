@@ -5,7 +5,7 @@ export const authApi = {
         return instance.post('auth/register', arg)
     },
     login: () => {
-
+        return instance.post('auth/login')
     },
     logout: () => {
 
