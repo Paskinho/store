@@ -18,5 +18,11 @@ const slice = createSlice({
         setError: (state, action: PayloadAction<{ error: string | null }>) => {
             state.error = action.payload.error
         }
+    },
+    extraReducers: {
+
     }
 })
+
+export const appReducer = slice.reducer
+export const appActions = slice.actions
