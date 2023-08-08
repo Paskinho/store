@@ -1,4 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
+import {createAppAsyncThunk} from "../../common/utils/createAppAsyncThunk";
 
 const authInitialState = {
     profile: null,
@@ -13,6 +14,13 @@ const slice = createSlice({
 
     }
 });
+
+// const login = createAppAsyncThunk<{profile: any}>('auth/login', async () => {
+//     return
+//     // thunkTryCatch
+//
+// })
+
 
 
 
