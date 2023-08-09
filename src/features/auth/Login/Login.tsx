@@ -1,6 +1,7 @@
 import { toast } from "react-toastify";
 import {useAppDispatch} from "../../../app/hooks";
 import {authApi} from "../auth.api";
+import {authThunks} from "../auth.slice";
 
 export const Login = () => {
 
@@ -17,7 +18,7 @@ export const Login = () => {
             rememberMe: false
         }
 
-          dispatch(authApi.login(payload)).then((res: any)=> {
+          dispatch(authThunks.login(payload)).then((res: any)=> {
               toast.success("Successfully login!")
               setTimeout(()=> {
                   navigate('/')

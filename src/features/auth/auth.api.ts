@@ -4,8 +4,8 @@ export const authApi = {
     register: (arg: any) => {
         return instance.post('auth/register', arg)
     },
-    login: () => {
-        return instance.post('auth/login')
+    login: (arg: any) => {
+        return instance.post('auth/login', arg)
     },
     logout: () => {
 
