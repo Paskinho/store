@@ -7,7 +7,7 @@ import {useNavigate} from "react-router"
 export const Login = () => {
 
     const dispatch = useAppDispatch()
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
 
 
@@ -21,9 +21,9 @@ export const Login = () => {
 
           dispatch(authThunks.login(payload)).then((res: any)=> {
               toast.success("Successfully login!")
-              setTimeout(()=> {
-                  navigate('/')
-              }, 1000)
+              // setTimeout(()=> {
+              //     navigate('/')
+              // }, 1000)
           }).catch((err: any)=>{
               toast.error(err.e.response.data.error)
           })

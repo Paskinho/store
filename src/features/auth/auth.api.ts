@@ -26,3 +26,10 @@ export type ArgLoginType = {
     password: string,
     rememberMe: boolean,
 };
+
+export type ProfileType = {
+    _id: string,
+    email: string,
+    rememberMe: boolean,
+    name: string
+}

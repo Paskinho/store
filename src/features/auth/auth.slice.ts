@@ -1,9 +1,9 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {createAppAsyncThunk} from "../../common/utils/createAppAsyncThunk";
-import {ArgLoginType, authApi} from "./auth.api";
+import {ArgLoginType, authApi, ProfileType} from "./auth.api";
 
 const authInitialState = {
-    profile: null,
+    profile: null as ProfileType | null,
     password: null
     // unhandleActions: [] as string []
 }
