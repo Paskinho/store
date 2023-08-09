@@ -1,10 +1,10 @@
 import {instance} from "../../common/api/common.api";
 
 export const authApi = {
-    register: (arg: any) => {
+    register: (arg: ArgLoginType) => {
         return instance.post('auth/register', arg)
     },
-    login: (arg: any) => {
+    login: (arg: ArgLoginType) => {
         return instance.post('auth/login', arg)
     },
     logout: () => {
@@ -19,6 +19,10 @@ export const authApi = {
     profile: () => {
 
     }
-
-
 }
+
+export type ArgLoginType = {
+    email: string,
+    password: string,
+    rememberMe: boolean,
+};
