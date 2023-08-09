@@ -9,8 +9,6 @@ export const Login = () => {
     const dispatch = useAppDispatch()
     // const navigate = useNavigate()
 
-
-
     const loginHandler = () => {
 
         const payload = {
@@ -31,7 +29,6 @@ export const Login = () => {
     }
 
     return (
-
         <div>
             <button onClick={loginHandler}> Sign In</button>
            </div>

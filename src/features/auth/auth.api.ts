@@ -8,7 +8,7 @@ export const authApi = {
         return instance.post('auth/login', arg)
     },
     logout: () => {
-
+        return instance.delete('auth/me')
     },
     forgotPassword: () => {
 
