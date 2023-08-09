@@ -10,8 +10,8 @@ export const authApi = {
     logout: () => {
         return instance.delete('auth/me')
     },
-    forgotPassword: () => {
-
+    forgotPassword: (arg: ArgForgotType) => {
+     return instance.post('auth/forgot', arg)
     },
     resetPassword: () => {
 
@@ -26,6 +26,12 @@ export type ArgLoginType = {
     password: string,
     rememberMe: boolean,
 };
+
+export type ArgForgotType = {
+    email: string,
+    from?: string,
+    message: string
+}
 
 export type ProfileType = {
     _id: string,
