@@ -14,7 +14,7 @@ export const authApi = {
      return instance.post('auth/forgot', arg)
     },
     resetPassword: () => {
-
+      return instance.post('auth/set-new-password') // можно сюда arg
     },
     profile: () => {
 
