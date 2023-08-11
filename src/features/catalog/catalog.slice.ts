@@ -1,4 +1,6 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {createAppAsyncThunk} from "../../common/utils/createAppAsyncThunk";
+import {catalogApi} from "./catalog.api";
 
 const slice = createSlice({
     name: 'catalog',
@@ -11,7 +13,14 @@ const slice = createSlice({
     }
 })
 
+const getCatalog = createAppAsyncThunk('catalog', async ()=> {
+    const res = await catalogApi.getCatalog()
+    return res.data
+})
+
+
+
 
 export const catalogReducer = slice.reducer
-export const catalogThunks = {}
+export const catalogThunks = {getCatalog}
 export const catalogActions = slice.actions

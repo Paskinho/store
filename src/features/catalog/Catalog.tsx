@@ -6,7 +6,10 @@ export const Catalog = () => {
     const dispatch = useAppDispatch()
 
     const getCatalog = () => {
-        dispatch(catalogThunks)
+        dispatch(catalogThunks.getCatalog).then(()=> {
+
+        })
+
     }
 
 
