@@ -13,9 +13,9 @@ const slice = createSlice({
     }
 })
 
-const getCatalog = createAppAsyncThunk('catalog', async ()=> {
+const getCatalog = createAppAsyncThunk<{catalog: any}>('catalog', async ()=> {
     const res = await catalogApi.getCatalog()
-    return res.data
+    return {catalog: res.data}
 })
 
 
