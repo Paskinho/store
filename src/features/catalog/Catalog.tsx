@@ -1,13 +1,15 @@
 import {useAppDispatch} from "../../app/hooks";
 import {catalogReducer, catalogThunks} from "./catalog.slice";
+import {toast} from "react-toastify";
 
 export const Catalog = () => {
 
     const dispatch = useAppDispatch()
 
     const getCatalog = () => {
-        dispatch(catalogThunks.getCatalog).then(()=> {
 
+        dispatch(catalogThunks.getCatalog()).then((res) => {
+            toast.success('Successfully ')
         })
 
     }
