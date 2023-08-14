@@ -12,8 +12,8 @@ export const Login = () => {
     const loginHandler = () => {
 
         const payload = {
-            email: "virgil@gmail.com",
-            password: "virgil",
+            email: "paskinho@gmail.com",
+            password: "Paskinho123",
             rememberMe: false
         }
 
