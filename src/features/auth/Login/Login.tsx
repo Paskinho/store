@@ -16,7 +16,6 @@ export const Login = () => {
             password: "Paskinho123",
             rememberMe: false
         }
-
           dispatch(authThunks.login(payload)).then((res: any)=> {
               toast.success("Successfully login!")
               // setTimeout(()=> {
