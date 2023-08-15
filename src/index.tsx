@@ -1,13 +1,15 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
+import {createRoot} from 'react-dom/client';
+import {Provider} from 'react-redux';
+import {store} from './app/store';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Catalog} from "./features/catalog/Catalog";
 import {Header} from "./features/header/Header";
+import {Cart} from "./features/cart/Cart";
+import {Login} from "./features/auth/Login/Login";
 
 
 const router = createBrowserRouter([
@@ -16,8 +18,16 @@ const router = createBrowserRouter([
         element: <div>This is my store</div>,
     },
     {
-        path:'/catalog',
+        path: '/catalog',
         element: <Catalog/>
+    },
+    {
+        path: '/cart',
+        element: <Cart/>
+    },
+    {
+        path: '/login',
+        element: <Login/>
     }
 ])
 
@@ -26,9 +36,12 @@ const container = document.getElementById('root')!;
 const root = createRoot(container);
 
 root.render(
+
     <Provider store={store}>
+        <BrowserRouter>
         <Header/>
-      <App />
+        <App/>
+        </BrowserRouter>
         <RouterProvider router={router}/>
     </Provider>
 );

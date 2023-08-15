@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
         <Login/>
-        <Catalog/>
+
         {/*<Routes>*/}
         {/*<Route path={'/catalog'} element={<Cart/>}  />*/}
         {/*</Routes>*/}

@@ -1,12 +1,12 @@
 import s from "./styles.module.css"
-import {useNavigate} from "react-router";
+import {useNavigate} from "react-router-dom";
 
 export const Header = () => {
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const addInCart = () => {
-        // return navigate('cart')
+        return navigate('cart')
     }
 
     const login = () => {
