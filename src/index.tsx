@@ -5,6 +5,17 @@ import { store } from './app/store';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import {createBrowserRouter} from "react-router-dom";
+import {Catalog} from "./features/catalog/Catalog";
+
+
+const router = createBrowserRouter([
+    {
+        path:'/catalog',
+        element: <Catalog/>
+    }
+])
+
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);

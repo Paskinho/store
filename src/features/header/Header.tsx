@@ -1,9 +1,12 @@
 import s from "./styles.module.css"
+import {useNavigate} from "react-router";
 
 export const Header = () => {
 
+    const navigate = useNavigate()
+
     const addInCart = () => {
-        return alert('Add in a cart successfully')
+        return navigate('cart')
     }
 
     const login = () => {
