@@ -10,7 +10,7 @@ export const Header = () => {
     }
 
     const login = () => {
-        return alert('Login successfully')
+        return navigate('login')
     }
 
     return (

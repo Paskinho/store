@@ -7,7 +7,7 @@ import {useNavigate} from "react-router"
 export const Login = () => {
 
     const dispatch = useAppDispatch()
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const loginHandler = () => {
 
@@ -29,7 +29,14 @@ export const Login = () => {
 
     return (
         <div>
+            <div>
+            <input type={'checkbox'}/>
+            <input/>
+            <input type={'password'}/>
+            </div>
             <button onClick={loginHandler}> Sign In</button>
+            <div>Don't have account?</div>
+            <button>Register</button>
            </div>
     )
 }
