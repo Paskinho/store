@@ -13,7 +13,7 @@ function App() {
         <Login/>
         <Catalog/>
         {/*<Routes>*/}
-        {/*<Route path={'/catalog'} element={<Catalog/>}  />*/}
+        {/*<Route path={'/catalog'} element={<Cart/>}  />*/}
         {/*</Routes>*/}
     </div>
   );

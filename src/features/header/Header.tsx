@@ -3,10 +3,10 @@ import {useNavigate} from "react-router";
 
 export const Header = () => {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const addInCart = () => {
-        return navigate('cart')
+        // return navigate('cart')
     }
 
     const login = () => {
