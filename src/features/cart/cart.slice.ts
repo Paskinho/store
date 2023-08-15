@@ -3,7 +3,7 @@ import {createAppAsyncThunk} from "../../common/utils/createAppAsyncThunk";
 import {cartApi} from "./сart.api";
 
 const slice = createSlice({
-    name: 'catalog',
+    name: 'cart',
     initialState: {},
     reducers: {
 

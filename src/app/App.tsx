@@ -9,7 +9,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <Header/>
         <Login/>
         <Catalog/>
         {/*<Routes>*/}
