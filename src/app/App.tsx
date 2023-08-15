@@ -5,12 +5,13 @@ import './App.css';
  import {Catalog} from "../features/catalog/Catalog";
  import {Login} from "../features/auth/Login/Login";
  import {Route, Routes} from "react-router";
+ import {Cart} from "../features/cart/Cart";
 
 function App() {
   return (
     <div className="App">
-        <Login/>
-
+        {/*<Login/>*/}
+        {/*<Cart/>*/}
         {/*<Routes>*/}
         {/*<Route path={'/catalog'} element={<Cart/>}  />*/}
         {/*</Routes>*/}

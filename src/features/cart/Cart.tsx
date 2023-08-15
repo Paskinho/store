@@ -1,5 +1,4 @@
 import {useAppDispatch} from "../../app/hooks";
-import {catalogReducer, catalogThunks} from "./cart.slice";
 import {toast} from "react-toastify";
 import {useNavigate} from "react-router";
 

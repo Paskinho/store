@@ -21,6 +21,6 @@ const slice = createSlice({
 
 
 
-export const catalogReducer = slice.reducer
-export const catalogThunks = {}
-export const catalogActions = slice.actions
+export const cartReducer = slice.reducer
+export const cartThunks = {}
+export const cartActions = slice.actions
