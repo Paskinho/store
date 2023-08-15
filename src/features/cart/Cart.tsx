@@ -12,7 +12,7 @@ export const Cart = () => {
     return (
         <div>
             {/*<button onClick={getCatalog}>Get Catalog</button>*/}
-            This your cart. Please check
+            Your cart is empty
         </div>
     )
 }
