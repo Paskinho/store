@@ -7,12 +7,29 @@ export const Cart = () => {
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
 
+    const orderHandler = () => {
+        toast.success('Successfully order!')
+    }
 
 
     return (
         <div>
-            {/*<button onClick={getCatalog}>Get Catalog</button>*/}
-            Your cart is empty
+            <div>
+                <input placeholder={'NAME'}></input>
+            </div>
+            <div>
+                <input placeholder={'SURNAME'}></input>
+            </div>
+            <div>
+                <input placeholder={'ADDRESS'}></input>
+            </div>
+            <div>
+                <input placeholder={'PHONE'}></input>
+            </div>
+            <div>
+                <button onClick={orderHandler}>ORDER</button>
+            </div>
+
         </div>
     )
 }
