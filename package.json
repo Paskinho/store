@@ -18,6 +18,7 @@
     "@types/react-dom": "^18.0.2",
     "@types/react-router-dom": "^5.3.3",
     "deploy-react": "^2.2.11",
+    "formik": "^2.4.3",
     "init": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
