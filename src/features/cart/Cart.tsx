@@ -1,6 +1,7 @@
 import {useAppDispatch} from "../../app/hooks";
 import {toast} from "react-toastify";
 import {useNavigate} from "react-router";
+import {Formik} from "formik";
 
 export const Cart = () => {
 
@@ -9,10 +10,15 @@ export const Cart = () => {
 
     const orderHandler = () => {
         toast.success('Successfully order!')
+        // navigate('order')
     }
 
+ const initialValue = {firstName:''}
 
     return (
+        <Formik initialValues={initialValue} onSubmit={()=> {
+            console.log('successfully')
+        }}>
         <div>
             <div>
                 <input placeholder={'NAME'}></input>
@@ -29,7 +35,7 @@ export const Cart = () => {
             <div>
                 <button onClick={orderHandler}>ORDER</button>
             </div>
-
         </div>
+        </Formik>
     )
 }
