@@ -2,6 +2,7 @@ import {useAppDispatch} from "../../app/hooks";
 import {toast} from "react-toastify";
 import {useNavigate} from "react-router";
 import {Formik} from "formik";
+import s from './styles.module.css'
 
 export const Cart = () => {
 
@@ -18,8 +19,9 @@ export const Cart = () => {
     return (
         <Formik initialValues={initialValue} onSubmit={()=> {
             console.log('successfully')
-        }}>
-        <div>
+        }}
+        >
+        <div className={s.cart}>
             <div>
                 <input placeholder={'NAME'}></input>
             </div>
@@ -33,7 +35,7 @@ export const Cart = () => {
                 <input placeholder={'PHONE'}></input>
             </div>
             <div>
-                <button onClick={orderHandler}>ORDER</button>
+                <button className={s.orderButton} onClick={orderHandler}>ORDER</button>
             </div>
         </div>
         </Formik>
