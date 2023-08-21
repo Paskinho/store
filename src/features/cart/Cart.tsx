@@ -17,6 +17,7 @@ export const Cart = () => {
  const initialValue = {firstName:''}
 
     return (
+        <div>
         <Formik initialValues={initialValue} onSubmit={()=> {
             console.log('successfully')
         }}
@@ -39,5 +40,10 @@ export const Cart = () => {
             </div>
         </div>
         </Formik>
+            <div>
+                Your cart is empty!
+            </div>
+        </div>
+
     )
 }

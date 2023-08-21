@@ -6,11 +6,11 @@ export const Header = () => {
     const navigate = useNavigate()
 
     const addInCart = () => {
-        return navigate('cart')
+        return navigate('/cart')
     }
 
     const login = () => {
-        return navigate('login')
+        return navigate('/login')
     }
 
     return (
