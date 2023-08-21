@@ -18,7 +18,6 @@ export const Header = () => {
             <div className={s.button}>
                 <button onClick={login}>Login</button>
         <button onClick={addInCart}>CART</button>
-
             </div>
         </div>
     )

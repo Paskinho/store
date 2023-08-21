@@ -11,6 +11,7 @@ export const Cart = () => {
 
     const orderHandler = () => {
         toast.success('Successfully order!')
+        alert('Successfully order!')
         // navigate('order')
     }
 
@@ -36,7 +37,7 @@ export const Cart = () => {
                 <input placeholder={'PHONE'}></input>
             </div>
             <div>
-                <button className={s.orderButton} onClick={orderHandler}>ORDER</button>
+                <button type={'submit'} className={s.orderButton} onClick={orderHandler}>ORDER</button>
             </div>
         </div>
         </Formik>
