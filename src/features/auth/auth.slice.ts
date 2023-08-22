@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {createAppAsyncThunk} from "../../common/utils/createAppAsyncThunk";
-import {ArgLoginType, authApi, ProfileType} from "./auth.api";
+import {ArgLoginType, ArgRegisterType, authApi, ProfileType} from "./auth.api";
 
 const authInitialState = {
     profile: null as ProfileType | null,
@@ -26,6 +26,10 @@ const logout = createAppAsyncThunk('auth/me', async (arg, thunkAPI) => {
     const res = await authApi.logout()
     return {}
 } )
+
+const register = createAppAsyncThunk<void, ArgRegisterType>('auth/register', async (arg:ArgRegisterType, thunkAPI)=>{
+    const res = await authApi.register(arg)
+})
 
 
 export const authReducer = slice.reducer

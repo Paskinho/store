@@ -27,6 +27,8 @@ export type ArgLoginType = {
     rememberMe: boolean,
 };
 
+export type ArgRegisterType = Omit<ArgLoginType, 'rememberMe'>
+
 export type ArgForgotType = {
     email: string,
     from?: string,

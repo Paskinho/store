@@ -27,6 +27,11 @@ export const Login = () => {
 
     }
 
+    const registerHandler = () => {
+        return navigate('/register')
+    }
+
+
     return (
         <div>
             <div>
@@ -36,7 +41,7 @@ export const Login = () => {
             </div>
             <button onClick={loginHandler}> Sign In</button>
             <div>Don't have account?</div>
-            <button>Register</button>
+            <button onClick={registerHandler}>Register</button>
            </div>
     )
 }

@@ -10,6 +10,7 @@ import {Catalog} from "./features/catalog/Catalog";
 import {Header} from "./features/header/Header";
 import {Cart} from "./features/cart/Cart";
 import {Login} from "./features/auth/Login/Login";
+import {Register} from "./features/auth/Register/Register";
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
     {
         path: '/login',
         element: <Login/>
+    },
+    {
+        path: '/register',
+        element: <Register/>
     }
 ])
 
