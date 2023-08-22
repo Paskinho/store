@@ -1,5 +1,5 @@
 import {useAppDispatch} from "../../app/hooks";
-import {catalogReducer, catalogThunks} from "./catalog.slice";
+import {catalogThunks} from "./catalog.slice";
 import {toast} from "react-toastify";
 
 export const Catalog = () => {
