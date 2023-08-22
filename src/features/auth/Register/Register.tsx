@@ -5,13 +5,27 @@ export const Register = () => {
     const dispatch = useDispatch()
 
     const registerHandler = () => {
-        dispatch(authThunks.register)
+        const payload = {
+            email: "paskinho@gmail.com",
+            password: "Paskinho123",
+        }
+
+        // dispatch(authThunks.register(payload))
     }
 
-    dispatch(authThunks.register)
 
     return <div>
+        <form>
+            <div>
+        <label>Email</label>
+        <input placeholder={'Email'} type={'email'}/>
+    </div>
+            <div>
+            <label>Password</label>
+            <input placeholder={'Password'} type={'password'}/>
         <button onClick={registerHandler}>SignUp</button>
+            </div>
+        </form>
 
     </div>
 
