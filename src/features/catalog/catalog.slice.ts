@@ -19,6 +19,13 @@ const getCatalog = createAppAsyncThunk<{catalog: any}>('catalog', async ()=> {
 })
 
 
+const addToCart = () => {
+
+
+}
+
+
+
 
 
 export const catalogReducer = slice.reducer

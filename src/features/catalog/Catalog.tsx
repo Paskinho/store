@@ -2,9 +2,20 @@ import {useAppDispatch} from "../../app/hooks";
 import {catalogThunks} from "./catalog.slice";
 import {toast} from "react-toastify";
 import s from "./styles.module.css"
+import {useState} from "react";
+
+
 
 
 export const Catalog = () => {
+
+    const [products, setProducts] = useState([
+        {id: 1, title: 'water', price: 2, img: ''}
+    ])
+
+
+    const [product, setProduct] = useState(0)
+
 
 
 
@@ -20,7 +31,9 @@ export const Catalog = () => {
 
 
     const addToCart = () => {
-
+       const product = {id:2, title: 'milk', price: 3, img: '' }
+        const newProducts = [products, ...product]
+        setProducts(newProducts)
     }
 
 
