@@ -32,7 +32,7 @@ export const Catalog = () => {
 
     const addToCart = () => {
        const product = {id:2, title: 'milk', price: 3, img: '' }
-        const newProducts = [products, ...product]
+        const newProducts = [{products, ...product}]
         setProducts(newProducts)
     }
 

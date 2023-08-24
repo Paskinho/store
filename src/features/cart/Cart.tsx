@@ -3,8 +3,11 @@ import {toast} from "react-toastify";
 import {useNavigate} from "react-router";
 import {Formik} from "formik";
 import s from './styles.module.css'
+import {useState} from "react";
 
 export const Cart = () => {
+
+    const [cartProduct, setCartProduct] = useState([])
 
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
@@ -24,6 +27,8 @@ export const Cart = () => {
         }}
         >
         <div className={s.cart}>
+            <div>{cartProduct}</div>
+
             <div>
                 <input placeholder={'NAME'}></input>
             </div>
