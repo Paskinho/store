@@ -1,22 +1,11 @@
 import {useAppDispatch} from "../../app/hooks";
 import {catalogThunks} from "./catalog.slice";
 import {toast} from "react-toastify";
-import {useState} from "react";
+import s from "./styles.module.css"
+
 
 export const Catalog = () => {
 
-
-    const [productsList, setProductsList] = useState([])
-
-    // New product state
-
-    const [newProduct, setNewProduct] = useState('')
-    const [newPrice, serNewPrice] = useState(0)
-    const [newAvailable, setNewAvailable] = useState(false)
-    const [newPhoto, setNewPhoto] = useState('')
-
-    //Update name State
-    const [updatedName, setUpdatedName] = useState('')
 
 
     const dispatch = useAppDispatch()
@@ -30,12 +19,19 @@ export const Catalog = () => {
     }
 
 
+    const addToCart = () => {
 
+    }
 
 
     return (
         <div>
-            <button onClick={getCatalog}>Get Catalog</button>
+            <h1 style={{color:'green' }}> Water</h1>
+            <p><img className={s.img} src={'https://gastronomia.by/upload/iblock/cfd/flmanv0t4djnk76qgqzdjo6lcxicapmc.jpg'} /></p>
+            <p>Price: {2}</p>
+            <button onClick={addToCart}>Add to cart</button>
+            {/*<button onClick={getCatalog}>Get Catalog</button>*/}
+
         </div>
     )
 }
