@@ -5,8 +5,6 @@ import s from "./styles.module.css"
 import {useState} from "react";
 
 
-
-
 export const Catalog = () => {
 
     const [products, setProducts] = useState([
@@ -15,9 +13,6 @@ export const Catalog = () => {
 
 
     const [product, setProduct] = useState(0)
-
-
-
 
     const dispatch = useAppDispatch()
 
@@ -43,7 +38,7 @@ export const Catalog = () => {
             <p><img className={s.img} src={'https://gastronomia.by/upload/iblock/cfd/flmanv0t4djnk76qgqzdjo6lcxicapmc.jpg'} /></p>
             <p>Price: {2}</p>
             <button onClick={addToCart}>Add to cart</button>
-            {/*<button onClick={getCatalog}>Get Catalog</button>*/}
+            <button onClick={getCatalog}>Get Catalog</button>
 
         </div>
     )

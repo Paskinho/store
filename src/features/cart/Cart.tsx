@@ -4,8 +4,6 @@ import {useNavigate} from "react-router";
 import {Formik} from "formik";
 import s from './styles.module.css'
 import {useState} from "react";
-import {Catalog} from "../catalog/Catalog";
-
 
 
 export const Cart = () => {
