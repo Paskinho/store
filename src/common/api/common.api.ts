@@ -5,6 +5,5 @@ export const instance = axios.create({
     withCredentials: true,
     headers: {
         "API-KEY": "AIzaSyAQ-BEh6rF56LnxMC9-74L6KY0jq1hWyL0",
-        "Access-Control-Allow-Origin": "*"
     }
 })
