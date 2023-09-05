@@ -25,9 +25,6 @@ const addToCart = () => {
 }
 
 
-
-
-
 export const catalogReducer = slice.reducer
 export const catalogThunks = {getCatalog}
 export const catalogActions = slice.actions
