@@ -1,11 +1,5 @@
- import React from 'react';
-import { Counter } from '../features/counter/Counter';
+import React from 'react';
 import './App.css';
- import {Header} from "../features/header/Header";
- import {Catalog} from "../features/catalog/Catalog";
- import {Login} from "../features/auth/Login/Login";
- import {Route, Routes} from "react-router";
- import {Cart} from "../features/cart/Cart";
 
 function App() {
   return (
