@@ -23,6 +23,8 @@ export const Register = () => {
             <div>
             <label>Password</label>
             <input placeholder={'Password'} type={'password'}/>
+                <label>Confirm password</label>
+            <input placeholder={'Confirm password'} type={'password'}/>
         <button onClick={registerHandler}>SignUp</button>
             </div>
         </form>
